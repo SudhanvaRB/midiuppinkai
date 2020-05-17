@@ -1,0 +1,55 @@
+<html>
+  <head> <title>ಮಿಡಿ ಉಪ್ಪಿನಕಾಯಿ</title> 
+    <meta charset="UTF-8">
+  
+    <!-- <body> -->
+  <body style=" background-image: url('typewrite.jpg');">
+    <link href="css/midistyle.css" type="text/css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <!-- <script src='https://kit.fontawesome.com/64cb1528bf.js' crossorigin="anonymous"></script> -->
+   <div>
+     <!-- <div class="menus"></div> -->
+       <ul class="titlebar">
+        <div class="menus active">
+          <li><a href="#">ಮಿಡಿ ಉಪ್ಪಿನಕಾಯಿ</a></li>
+        </div>
+        <div class="menus">
+         <li><a href="#"><i class="	fas fa-camera-retro"></i>Photography</a></li>
+         <span>
+           <ul class="submenu">
+             <li><a href="#">Personal Project</a></li>
+             <li><a href="#">Memoir</a></li>
+             <li><a href="#">Photo Essays</a></li>
+             <li><a href="#">Commissioned</a></li>
+           </ul>
+         </span>
+        </div>
+        <div class="menus">
+          <li><a href="#">Kannada</a></li>
+        </div>
+        <div class="menus">
+          <li><a href="#">English</a></li>
+          <ul class="submenu">
+            <li><a href="#">View Blogs</a></li>
+            <li><a href="newblog.html">New Blog</a></li>
+          </ul>
+        </div>
+        <div class="menus">
+          <li><a href="#">About</a></li>
+        </div>
+       </ul>
+      <!-- </div> -->
+   </div>
+   <script>
+    var btns = document.getElementsByClassName("menus");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+    </script>
+  </body>
+</html>
